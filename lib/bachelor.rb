@@ -1,7 +1,9 @@
 def get_first_name_of_season_winner(data, season)
-  data[season.to_sym].each do |details|
+  data[season].each do |names, details|
+    names.each do |details|
     if details[:status] == "Winner"
       return details[:name]
+    end 
     end 
   end 
 end
