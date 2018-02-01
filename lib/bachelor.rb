@@ -49,5 +49,5 @@ def get_average_age_for_season(data, season)
         ages << details["age"]
       end 
     end 
-  ages.inject {}
+  ages.inject {|sum,n| sum + n}
 end
