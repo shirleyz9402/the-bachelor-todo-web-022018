@@ -45,9 +45,11 @@ end
 def get_average_age_for_season(data, season)
   ages = []
    data.each do |se, people|
+     if se == season
       people.each do |details|
         ages << details["age"]
       end 
+    end 
     end 
   ages.inject{ |sum, el| sum + el }.to_f / ages.size
 end
