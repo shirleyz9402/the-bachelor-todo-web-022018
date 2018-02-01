@@ -49,6 +49,5 @@ def get_average_age_for_season(data, season)
         ages << details["age"]
       end 
     end 
-  end 
   ages
 end
